@@ -12,10 +12,12 @@ html {
 
 body {
   background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 .container {
@@ -26,6 +28,7 @@ a {
   background-color: #fff;
   box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   display: block;
+  padding: 8px 16px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,7 +38,6 @@ a {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 8px 16px;
 }
 
 .topbar__logo {
@@ -78,4 +80,114 @@ a {
 
 .stories__profile--new {
   background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.post__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+}
+
+.profile__thumb {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 8px;
+  width: 40px;
+}
+
+.profile__thumb img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.profile__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.options {
+  font-size: 1.4rem;
+  padding: 0 6px;
+}
+
+.post__image {
+  width: 100%;
+}
+
+.post__actions {
+  display: flex;
+  padding: 4px 0;
+  width: 100%;
+}
+
+.post__actions a {
+  font-size: 2.4rem;
+  margin: 4px 14px;
+}
+
+.post__actions a:last-child {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.post__info {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 8px;
+}
+
+.thumb {
+  border-radius: 50%;
+  height: 30px;
+  margin-right: 8px;
+  width: 30px;
+}
+
+.thumb img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.info {
+  font-size: 1.2rem;
+}
+
+.info a {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 728px) {
+	.container {
+    margin: 0 auto;
+    width: 728px;
+  }
+
+  .feed {
+    padding: 16px 0;
+  }
 }
